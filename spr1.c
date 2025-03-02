@@ -182,8 +182,8 @@ int main()
     InitWindow(screenWidth, screenHeight, "raylib sprite system demo"); // 創建視窗並設定標題
     SetTargetFPS(60); // 設定目標幀率為 60fps
 
-    // 載入動畫幀，假設 sprite sheet 檔案位於 "img/slime.png"，單元格大小為 12 x 14
-    AnimFrame slimeAF = AnimFrameLoad("img/slime.png", 12, 14);
+    // 載入動畫幀，假設 sprite sheet 檔案位於 "asset/slime.png"，單元格大小為 12 x 14
+    AnimFrame slimeAF = AnimFrameLoad("asset/slime.png", 12, 14);
     // 檢查動畫幀是否載入成功
     if (slimeAF.tex.id == 0) {
         CloseWindow(); // 載入失敗則關閉視窗並退出
